@@ -1,0 +1,16 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running MyServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+
+Results:
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+BUILD SUCCESSFUL
+
+Wanted but not invoked:
+mockApi.getData();
+-> at MyServiceTest.testVerifyInteraction(MyServiceTest.java:10)
+
+
