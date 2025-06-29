@@ -1,0 +1,30 @@
+-- Before
+SELECT Balance FROM SavingsAccounts WHERE AccountID = 101;
+-- Output: 1000.00
+
+EXEC ProcessMonthlyInterest;
+
+-- After
+SELECT Balance FROM SavingsAccounts WHERE AccountID = 101;
+-- Output: 1010.00
+
+-- Before
+SELECT Salary FROM Employees WHERE EmployeeID = 1;
+-- Output: 50000.00
+
+EXEC UpdateEmployeeBonus('HR', 10);
+
+-- After
+SELECT Salary FROM Employees WHERE EmployeeID = 1;
+-- Output: 55000.00
+
+-- Before
+SELECT Balance FROM Accounts WHERE AccountID IN (201, 202);
+-- Output: 201 → 2000.00, 202 → 1000.00
+
+EXEC TransferFunds(201, 202, 500);
+
+-- After
+SELECT Balance FROM Accounts WHERE AccountID IN (201, 202);
+-- Output: 201 → 1500.00, 202 → 1500.00
+
