@@ -1,0 +1,39 @@
+-- Before
+SELECT LoanInterestRate FROM Customers WHERE CustomerID = 101;
+-- Output: 8.00
+
+-- Execute
+BEGIN
+  -- PL/SQL block from scenario 1
+END;
+/
+
+-- After
+SELECT LoanInterestRate FROM Customers WHERE CustomerID = 101;
+-- Output: 7.00
+
+-- Before
+SELECT IsVIP FROM Customers WHERE CustomerID = 102;
+-- Output: NULL
+
+-- Execute
+BEGIN
+  -- PL/SQL block from scenario 2
+END;
+/
+
+-- After
+SELECT IsVIP FROM Customers WHERE CustomerID = 102;
+-- Output: TRUE
+
+-- Sample Loan Due in 10 Days
+LoanID: 301 | CustomerID: 103 | DueDate: 07-JUL-2025
+
+-- Execute
+BEGIN
+  -- PL/SQL block from scenario 3
+END;
+/
+
+-- Output on DBMS Output:
+Reminder: Loan ID 301 for Customer ID 103 is due on 07-JUL-2025
