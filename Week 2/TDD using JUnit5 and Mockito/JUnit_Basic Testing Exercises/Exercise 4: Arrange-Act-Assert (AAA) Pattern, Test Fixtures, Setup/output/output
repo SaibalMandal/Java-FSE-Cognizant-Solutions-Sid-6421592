@@ -1,1 +1,7 @@
+Setup complete.
+Teardown complete.
+Setup complete.
+Teardown complete.
 
+testAddition	Passed	5 + 3 = 8
+testSubtraction	Passed	10 - 4 = 6
