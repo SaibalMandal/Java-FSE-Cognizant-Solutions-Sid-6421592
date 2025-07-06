@@ -1,7 +1,7 @@
 
 # JPA vs Hibernate vs Spring Data JPA
 
-## 🔍 Comparison Table
+##  Comparison Table
 
 | Feature                    | JPA (Java Persistence API)                                | Hibernate                                           | Spring Data JPA                                              |
 |----------------------------|------------------------------------------------------------|-----------------------------------------------------|---------------------------------------------------------------|
@@ -15,7 +15,7 @@
 
 ---
 
-## ✅ Hibernate Example Output
+ Hibernate Example Output
 
 ```
 Added Employee ID: 1
@@ -25,7 +25,7 @@ Explanation: The Hibernate method opens a session, starts a transaction, saves a
 
 ---
 
-## ✅ Spring Data JPA Example Output
+Spring Data JPA Example Output
 
 Console output from logs:
 
